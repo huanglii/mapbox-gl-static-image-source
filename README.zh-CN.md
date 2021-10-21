@@ -1,8 +1,8 @@
 # mapbox-gl-static-image-source
 
-English | ![中文](README.zh-CN.md)
+[English](README.md) | 中文
 
-Load a static image of any projection via ol/reproj.
+通过 ol/reproj 加载任意投影的静态图片。
 
 ```
 import StaticImageSource from 'mapbox-gl-static-image-source'
