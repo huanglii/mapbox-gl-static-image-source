@@ -1,6 +1,6 @@
 {
   "name": "mapbox-gl-static-image-source",
-  "private": true,
+  "private": false,
   "version": "0.1.0",
   "main": "src/index.ts",
   "repository": "https://github.com/huanglii/mapbox-gl-static-image-source.git",

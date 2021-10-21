@@ -21,9 +21,8 @@
   </head>
   <body>
     <div id="map"></div>
+    <script src="https://cdn.jsdelivr.net/npm/mapbox-gl-static-image-source@0.1.0/dist/mapbox-gl-static-image-source.umd.js"></script>
     <script type="module">
-      import StaticImageSource from './src/index.ts'
-      // mapboxgl.accessToken = '{YOUR MAPBOX ACCESS TOKEN}'
       mapboxgl.accessToken = 'pk.eyJ1IjoiaHVhbmdsaWkiLCJhIjoiY2ptbjJsZXRsMHBlNzNsbGIycTk3eWU0biJ9.Pj_8_ER8nD7UQSSeOg4JZA'
       const map = new mapboxgl.Map({
         container: 'map',
@@ -40,7 +39,7 @@
       map.on('load', () => {
         const imageStaticSource = new StaticImageSource({
           crossOrigin: 'anonymous',
-          url: '/4326.png',
+          url: 'https://cdn.jsdelivr.net/npm/mapbox-gl-static-image-source@0.1.0/public/4326.png',
           projection: 'EPSG:4326',
           imageExtent: [105.289838, 28.164713, 110.195632, 32.204171]
         })
