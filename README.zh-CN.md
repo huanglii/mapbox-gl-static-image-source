@@ -38,4 +38,4 @@ map.on('load', () => {
 })
 ```
 
-渲染效果: [](./example/index.html)
+[渲染效果](./example/index.html)

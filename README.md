@@ -38,4 +38,4 @@ map.on('load', () => {
 })
 ```
 
-The rendering result is as shown below: [](./example/index.html)
+The rendering result is as shown below: [Load a static image of any projection](./example/index.html)
