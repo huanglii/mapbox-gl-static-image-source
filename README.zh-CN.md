@@ -38,4 +38,4 @@ map.on('load', () => {
 })
 ```
 
-[渲染效果](./example/index.html)
+[渲染效果](https://huanglii.github.io/mapbox-gl-static-image-source/)
