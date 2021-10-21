@@ -1,6 +1,6 @@
 # mapbox-gl-static-image-source
 
-English | ![中文](README.zh-CN.md)
+English | [中文](README.zh-CN.md)
 
 Load a static image of any projection via ol/reproj.
 
