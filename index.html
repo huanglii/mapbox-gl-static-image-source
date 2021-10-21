@@ -18,44 +18,11 @@
         width: 100%;
       }
       </style>
+    <script type="module" crossorigin src="/assets/index.d3fc8fa6.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.0afd9346.js">
   </head>
   <body>
     <div id="map"></div>
-    <script type="module">
-      import StaticImageSource from './src/index.ts'
-      // mapboxgl.accessToken = '{YOUR MAPBOX ACCESS TOKEN}'
-      mapboxgl.accessToken = 'pk.eyJ1IjoiaHVhbmdsaWkiLCJhIjoiY2ptbjJsZXRsMHBlNzNsbGIycTk3eWU0biJ9.Pj_8_ER8nD7UQSSeOg4JZA'
-      const map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/huanglii/ckqt08oxg1kcc18ub9vowurqd?optimize=true',
-        bounds: [
-          [105.289838, 32.204171],
-          [110.195632, 28.164713],
-        ], // [sw, ne]
-        fitBoundsOptions: {
-          padding: { top: 50, bottom: 50, left: 50, right: 50 },
-        },
-      })
-
-      map.on('load', () => {
-        const imageStaticSource = new StaticImageSource({
-          crossOrigin: 'anonymous',
-          url: '/4326.png',
-          projection: 'EPSG:4326',
-          imageExtent: [105.289838, 28.164713, 110.195632, 32.204171]
-        })
-        imageStaticSource.addEventListener('load', (e) => {
-          map.addSource('canvas-source', e.target)
-          map.addLayer(
-            {
-              id: 'canvas-layer',
-              type: 'raster',
-              source: 'canvas-source',
-            },
-            'waterway'
-          )
-        })
-      })
-    </script>
+    
   </body>
 </html>
