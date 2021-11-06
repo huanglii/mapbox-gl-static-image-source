@@ -30,6 +30,7 @@ class StaticImageSource extends EventTarget {
     this._options = options
     this._projection = getProjection(options.projection)
     this._imageExtent = options.imageExtent
+    this._imageState = ImageState.IDLE
 
     this._initCoordinates()
     this._loadImage()
@@ -67,7 +68,7 @@ class StaticImageSource extends EventTarget {
         })
     }
 
-    this._imageState = ImageState.IDLE
+    this._imageState = ImageState.LOADING
     this._image = image
   }
 

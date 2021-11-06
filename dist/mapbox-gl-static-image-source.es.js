@@ -1172,6 +1172,7 @@ class StaticImageSource extends EventTarget {
     this._options = options;
     this._projection = get(options.projection);
     this._imageExtent = options.imageExtent;
+    this._imageState = ImageState$1.IDLE;
     this._initCoordinates();
     this._loadImage();
   }
@@ -1199,7 +1200,7 @@ class StaticImageSource extends EventTarget {
         this._handleImageError();
       });
     }
-    this._imageState = ImageState$1.IDLE;
+    this._imageState = ImageState$1.LOADING;
     this._image = image;
   }
   _handleImageLoad() {

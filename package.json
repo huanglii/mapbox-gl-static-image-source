@@ -1,8 +1,16 @@
 {
   "name": "mapbox-gl-static-image-source",
   "private": false,
-  "version": "0.1.0",
-  "main": "src/index.ts",
+  "version": "0.1.1",
+  "files": ["dist"],
+  "main": "./dist/mapbox-gl-static-image-source.es.js",
+  "module": "./dist/mapbox-gl-static-image-source.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mapbox-gl-static-image-source.es.js",
+      "require": "./dist/mapbox-gl-static-image-source.umd.js"
+    }
+  },
   "repository": "https://github.com/huanglii/mapbox-gl-static-image-source.git",
   "author": "黄俐 <li.huangli@qq.com>",
   "license": "MIT",
