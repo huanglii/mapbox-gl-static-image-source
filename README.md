@@ -1,3 +1,5 @@
+❌ This repository has been archived. It is recommended you replace the dependency with [@naivemap/mapbox-gl-image-layer]([https://github.com/naivemap/mapbox-gl-layers](https://www.npmjs.com/package/@naivemap/mapbox-gl-image-layer)
+
 # mapbox-gl-static-image-source
 
 English | [中文](README.zh-CN.md)
